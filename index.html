@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.js">
+    <title>box</title>
+</head>
+<body>
+
+    <a href="#"><img class="open-msg" onclick="openForm()"  src="icon.svg" alt=""></a>
+
+
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <span> <img src="recram.svg" width="40px" alt=""> RecRam İletişim</span>
+
+    <label for="msg"><b>Mesaj</b></label>
+    
+    <textarea placeholder="Mesajınızı yazın.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Gönder</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+  </form>
+</div>
+
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+
+</body>
+</html>

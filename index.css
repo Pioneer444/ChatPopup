@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.open-msg {
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 60px;
+  }
+
+.chat-popup {
+    border: none;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 1px solid #f1f1f1;
+    z-index: 9;
+    margin-bottom: 20px;
+}
+
+.chat-popup span{
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    background-color: #111827;
+    z-index: 99;
+    width: 300px;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label b{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container textarea {
+    width: 97%;
+    color: #111827;
+    font-size: 12px;
+    border-radius: 8px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #F2F6FB;
+    resize: none;
+    min-height: 200px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+.form-container .btn {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #4AC2BF;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: #FE3535;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
